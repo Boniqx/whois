@@ -16,10 +16,9 @@ export interface WhoisResponse {
   
   export const fetchWhoisData = async (
     domain: string,
-    apiKey: string,
     outputFormat: string = 'JSON'
   ): Promise<WhoisResponse> => {
-    const url = `https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=${apiKey}&domainName=${domain}&outputFormat=${outputFormat}`;
+    const url = `https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=${process.env.NEXT_PUBLIC_WHOIS_API_KEY}&domainName=${domain}&outputFormat=${outputFormat}`;
   
     try {
       const response = await fetch(url);

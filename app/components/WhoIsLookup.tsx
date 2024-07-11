@@ -7,9 +7,8 @@ import DomainForm from './DomainForm';
 
 const WhoisLookup: React.FC = () => {
   const [infoType, setInfoType] = useState<'domain' | 'contact'>('domain'); // New state for information type
-  const apiKey = 'at_Wi40y0eRau8fUMQBcGgxMWEej6mX3'; 
 
-  const { data, error, isLoading, lookup } = useWhoisLookup(apiKey);
+  const { data, error, isLoading, lookup } = useWhoisLookup();
 
   const handleLookup = (domain: string) => {
     lookup(domain);
