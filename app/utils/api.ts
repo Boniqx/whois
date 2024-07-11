@@ -1,4 +1,3 @@
-// src/api.ts
 
 export interface WhoisResponse {
     domainName: string;
