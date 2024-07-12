@@ -15,7 +15,7 @@ This is a Whois Lookup application built with Next.js. It allows users to input 
 
 ### Clone the Repository
 
-git clone [<your-repository-url>](https://github.com/Boniqx/whois.git)
+git clone https://github.com/Boniqx/whois.git
 
 ### Install Dependencies
 
